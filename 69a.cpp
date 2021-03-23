@@ -1,6 +1,6 @@
 /*
 Name: Young Physicist
-Submitted: AC
+Status: AC
 */
 #include <bits/stdc++.h>
 

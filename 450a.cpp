@@ -1,6 +1,6 @@
 /*
 Name: Jzzhu and Children
-Submitted: AC
+Status: AC
 */
 #include <bits/stdc++.h>
 

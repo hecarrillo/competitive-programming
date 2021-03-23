@@ -1,6 +1,6 @@
 /*
 Name: Array with Odd Sum
-Submitted: Accepted
+Status: Accepted
 */
 
 #include <bits/stdc++.h>

@@ -1,6 +1,6 @@
 /*
 Name: Queue at the School
-Submitted: AC
+Status: AC
 */
 #include <bits/stdc++.h>
 

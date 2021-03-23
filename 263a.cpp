@@ -1,6 +1,6 @@
 /*
 Name: Beautiful Matrix
-Submitted: AC
+Status: AC
 */
 #include <bits/stdc++.h>
 

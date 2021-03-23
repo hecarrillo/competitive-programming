@@ -1,6 +1,6 @@
 /*
 Name: Lights Out
-Stage: Testing
+Status: Testing
 */
 #include <bits/stdc++.h>
 

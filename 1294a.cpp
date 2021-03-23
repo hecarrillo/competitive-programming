@@ -1,6 +1,6 @@
 /*
 Name: Collecting Coins
-Submitted: AC
+Status: AC
 */
 #include <bits/stdc++.h>
 

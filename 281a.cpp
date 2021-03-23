@@ -1,6 +1,6 @@
 /*
 Name: Word Capitalization
-Submitted: AC
+Status: AC
 */
 #include <bits/stdc++.h>
 

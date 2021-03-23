@@ -1,6 +1,6 @@
 /**
 Name: Keyboard. Implementation with unordered_map
-Status:
+Status: AC
 **/
 
 #include<bits/stdc++.h>
