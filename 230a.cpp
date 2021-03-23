@@ -1,6 +1,6 @@
 /*
 Name: Dragons
-Submitted:
+Submitted: AC
 */
 
 #include<bits/stdc++.h>
