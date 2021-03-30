@@ -66,6 +66,7 @@ int main() {
   linkedList * myLinkedList = new linkedList();
   cout << "Insert number of items in linkedList" << "\n";
   cin >> n;
+  cout << "Insert the numeric value of each node followed by its name" << "\n";
   for (int i = 0; i < n; i++){
     int val;
     string nm;
@@ -77,6 +78,5 @@ int main() {
   string nameToDelete;
   cin >> nameToDelete;
   deleteNode(myLinkedList, nameToDelete);
-
   printLLvalues(myLinkedList);
 }
