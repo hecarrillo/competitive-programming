@@ -1,5 +1,5 @@
 /*
-Name: Sparse Arrays
+Name: Sparse Arrays (HackerRank)
 Status: AC
 */
 
