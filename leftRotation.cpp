@@ -1,6 +1,6 @@
 /**
 Name: Left Rotation (HackerRank)
-Status: Coding
+Status: AC
 **/
 
 #include <bits/stdc++.h>
