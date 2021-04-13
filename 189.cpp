@@ -27,7 +27,7 @@ int main(){
 
   while()
   for (int i = 0; i < abc.length(); i++) {
-    for (int j = 1 ; )
+    for (int j = 1; )
   }
 
 }

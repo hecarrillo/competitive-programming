@@ -1,3 +1,9 @@
+/*
+Name: Free Ice Cream
+Status: AC
+*/
+
+
 #include <bits/stdc++.h>
 
 using namespace std;
