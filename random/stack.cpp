@@ -6,22 +6,21 @@ using namespace std;
 struct Node {
   int data;
   Node * previous;
-  Node (int a){
-    data = a;
-    previous = nullptr;
-  }
 };
 
 struct Stack{
-  Node * head;
-  int size;
-  Stack (){
-    head = nullptr;
-    size = 0;
+  Node * head = nullptr;
+  int size = 0;
+  void print () {
+    Node * curr = head;
+    while(curr) {
+      cout << curr -> data << " -> ";
+      curr = curr -> previous;
+    }
+    cout << "bottom\n";
   }
-  void push (Node * newNode){
-    newNode -> previous = head;
-    head = newNode;
+  void push (int nodeData){
+    head = new Node {nodeData, head};
     size ++;
   }
   Node * pop () {
@@ -31,18 +30,10 @@ struct Stack{
     size--;
     return temp;
   }
-  void print () {
-    Node * curr = head;
-    while(curr) {
-      cout << curr -> data << " -> ";
-      curr = curr -> previous;
-    }
-    cout << "bottom\n";
-  }
   Node * peek () {
     return head;
   }
-  int find (int find){
+  int findIndex (int find){
     Node * curr = head;
     int index = 0;
     while(curr) {
@@ -55,21 +46,21 @@ struct Stack{
 };
 
 int main() {
+  cout << "Insert number of elements in the Stack: ";
   int n; cin >> n;
-  Stack * myStack = new Stack();
+  cout << "Insert the node values: \n";
+  Stack myStack;
   while (n--){
     int data; cin >> data;
-    Node * newNode = new Node(data);
-    myStack -> push(newNode);
+    myStack.push(data);
   }
-  myStack -> print();
-  int size = myStack -> size;
-  cout << "Size: " << size << "\n";
+  myStack.print();
+  cout << "Size: " << myStack.size << "\n";
   cout << "Insert Node data to find: ";
   int data; cin >> data;
-  cout << "Node in position (1 indexed): " << myStack -> find(data) << "\n";
+  cout << "Node in position (1 indexed): " << myStack.findIndex(data) << "\n";
   cout << "Popping..." << "\n";
-  myStack -> pop();
-  myStack -> print();
+  myStack.pop();
+  myStack.print();
 
 }
