@@ -116,6 +116,31 @@ struct BinarySearchTree {
       return;
     }
 
+    void printInorder(Node<T> * root){
+      Node<T> * aux = root;
+      stack<Node<T> *> stack;
+      while (aux != nullptr) {
+        cout << aux -> value << " ";
+
+        Node<T> * left = aux -> left;
+        Node<T> * right = aux -> right;
+
+        if (left != nullptr and right != nullptr) {
+          stack.push(right);
+          aux = left;
+        } else if (left == nullptr and right == nullptr) {
+          if(stack.empty()) break;
+          aux = stack.top();
+          stack.pop();
+        } else if (left == nullptr and right != nullptr) {
+          aux = right;
+        } else if (left != nullptr and right == nullptr) {
+          aux = left;
+        }
+      }
+      return;
+    }
+
   public:
     bool search( T value ) {
         return search( _root, value );
